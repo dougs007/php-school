@@ -9,13 +9,14 @@ if (!empty($_GET['id_responsavel'])) {
     $responsavel->carregarPorId($_GET['id_responsavel']);
 }
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 
 if (!empty($_GET)) {
-    echo "<h1 class='text-center'>Atualizar Responsável</h1>";
-} else
-    echo "<h1 class='text-center'>Novo Responsável</h1>";
-
+    $title = "Atualizar Responsável";
+} else {
+    $title = "Novo Responsável";
+}
+    echo "<h1 class='text-center'>".$title."</h1>";
 ?>
 
     <div class="container">
@@ -75,4 +76,4 @@ if (!empty($_GET)) {
     </div>
 
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

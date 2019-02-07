@@ -7,8 +7,7 @@ include_once '../responsavel/Responsavel.php';
 $aluno = new Aluno();
 $arrAluno = $aluno->recuperarDados();
 
-$curso = new Curso();
-$arrCursos = $curso->recuperarDados();
+$arrCursos = (new Curso())->recuperarDados();
 
 $responsavel = new Responsavel();
 $arrResponsavel = $responsavel->recuperarDados();
@@ -17,7 +16,7 @@ if (!empty($_GET['id_aluno'])) {
     $aluno->carregarPorId($_GET['id_aluno']);
 }
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 
 if (!empty($_GET)) {
     echo "<h1 class='text-center'>Atualizar Aluno</h1>";
@@ -129,4 +128,4 @@ if (!empty($_GET)) {
         </form>
     </div>
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

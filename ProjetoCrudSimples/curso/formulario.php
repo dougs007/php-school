@@ -7,7 +7,7 @@ if (!empty($_GET['id_curso'])) {
     $curso->carregarPorId($_GET['id_curso']);
 }
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 
 if (!empty($_GET)) {
     echo "<h1 class='text-center'>Atualizar Curso</h1>";
@@ -35,4 +35,4 @@ if (!empty($_GET)) {
     </div>
 
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

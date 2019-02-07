@@ -1,10 +1,9 @@
 <?php
 include_once 'Responsavel.php';
 
-$responsavel = new Responsavel();
-$arResponsavel = $responsavel->recuperarDados();
+$arResponsavel = (new Responsavel())->recuperarDados();
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 ?>
 
     <h1 class="text-center">Responsáveis</h1>
@@ -24,11 +23,11 @@ include_once '../Cabecalho.php';
         ?>
             <tr>
                 <td style='width: 151px'>
-                    <a href="processamento.php?acao=excluir&id_responsavel=<?= $responsavel['id_responsavel'] ?>"
-                       class="btn btn-danger">Excluir
-                    </a>
                     <a href="formulario.php?id_responsavel=<?= $responsavel['id_responsavel'] ?>"
                        class="btn btn-warning">Alterar
+                    </a>
+                    <a href="processamento.php?acao=excluir&id_responsavel=<?= $responsavel['id_responsavel'] ?>"
+                       class="btn btn-danger">Excluir
                     </a>
                 </td>
                 <td><?= $responsavel['id_responsavel'] ?> </td>
@@ -43,4 +42,4 @@ include_once '../Cabecalho.php';
         ?>
     </table>
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

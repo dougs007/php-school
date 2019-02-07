@@ -1,10 +1,9 @@
 <?php
 include_once 'Curso.php';
 
-$curso = new Curso();
-$arrCursos = $curso->recuperarDados();
+$arrCursos = (new Curso())->recuperarDados();
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 ?>
     <h1 class="text-center">Cursos</h1>
     <a class="btn btn-primary" href="formulario.php">Novo Curso</a>
@@ -31,4 +30,4 @@ include_once '../Cabecalho.php';
         ?>
     </table>
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

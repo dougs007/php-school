@@ -11,9 +11,9 @@
 <head>
     <title>Escola</title>
 
-    <link rel="stylesheet" href="../js/bootstrap/css/bootstrap.css"/>
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../js/jquery.maskedinput.js"></script>
+    <link rel="stylesheet" href="../public/js/bootstrap/css/bootstrap.css"/>
+    <script type="text/javascript" src="../public/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../public/js/jquery.maskedinput.js"></script>
     <script>
         $(function () {
             $('#telefone').mask('(99) 9999-9999');
@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Web 1</a>
+            <a class="navbar-brand" href="index.php">Web 1</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

@@ -4,7 +4,7 @@ include_once 'Aluno.php';
 $aluno = new Aluno();
 $arAlunos = $aluno->recuperarDados();
 
-include_once '../Cabecalho.php';
+include_once '../public/Cabecalho.php';
 ?>
     <h1 class="text-center">Alunos</h1>
     <a class="btn btn-primary" href=formulario.php>Novo Aluno</a>
@@ -23,11 +23,11 @@ include_once '../Cabecalho.php';
         ?>
             <tr>
                 <td style="width: 151px">
-                    <a href="processamento.php?acao=excluir&id_aluno=<?= $aluno['id_aluno'] ?>"
-                       class="btn btn-danger">Excluir
-                    </a>
                     <a href="formulario.php?id_aluno=<?= $aluno['id_aluno'] ?>"
                        class="btn btn-warning">Alterar
+                    </a>
+                    <a href="processamento.php?acao=excluir&id_aluno=<?= $aluno['id_aluno'] ?>"
+                       class="btn btn-danger">Excluir
                     </a>
                 </td>
                 <td><?= $aluno['id_aluno'] ?></td>
@@ -39,8 +39,7 @@ include_once '../Cabecalho.php';
         <?php
             endforeach;
         ?>
-
     </table>
 
 <?php
-include_once '../Rodape.php';
+include_once '../public/Rodape.php';

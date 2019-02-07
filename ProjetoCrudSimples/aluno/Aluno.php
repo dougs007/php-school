@@ -286,8 +286,8 @@ class Aluno
                     endereco = '$endereco',
                     data_nascimento = '$data_nascimento',
                     sexo = '$sexo',
-                    id_responsavel = '(int)$id_responsavel',
-                    id_curso = '(int)$id_curso',
+                    id_responsavel = ".(int)$id_responsavel.",
+                    id_curso = ".(int)$id_curso.",
                     nota = '$nota'
                 WHERE
                     id_aluno = '".(int)$id_aluno."'
