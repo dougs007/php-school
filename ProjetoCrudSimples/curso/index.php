@@ -1,9 +1,8 @@
 <?php
 include_once 'Curso.php';
+include_once '../public/Cabecalho.php';
 
 $arrCursos = (new Curso())->recuperarDados();
-
-include_once '../public/Cabecalho.php';
 ?>
     <h1 class="text-center">Cursos</h1>
     <a class="btn btn-primary" href="formulario.php">Novo Curso</a>

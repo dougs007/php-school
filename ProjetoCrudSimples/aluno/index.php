@@ -1,10 +1,8 @@
 <?php
 include_once 'Aluno.php';
-
-$aluno = new Aluno();
-$arAlunos = $aluno->recuperarDados();
-
 include_once '../public/Cabecalho.php';
+
+$arAlunos = (new Aluno())->recuperarDados();
 ?>
     <h1 class="text-center">Alunos</h1>
     <a class="btn btn-primary" href=formulario.php>Novo Aluno</a>

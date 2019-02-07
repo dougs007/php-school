@@ -1,9 +1,8 @@
 <?php
 include_once 'Responsavel.php';
+include_once '../public/Cabecalho.php';
 
 $arResponsavel = (new Responsavel())->recuperarDados();
-
-include_once '../public/Cabecalho.php';
 ?>
 
     <h1 class="text-center">Responsáveis</h1>
